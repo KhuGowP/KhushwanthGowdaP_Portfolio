@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio - Khushwanth Gowda P</title>
+  <meta name="description" content="Portfolio of Khushwanth Gowda P" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Main Navigation">
+    <div class="container nav-content">
+      <div class="logo" id="logo">Portfolio</div>
+
+      <!-- Desktop Navigation -->
+      <div class="nav-links" id="nav-links">
+        <button data-section="home">Home</button>
+        <button data-section="about">About</button>
+        <button data-section="skills">Skills</button>
+        <button data-section="projects">Projects</button>
+        <button data-section="experience">Experience</button>
+        <button data-section="education">Education</button>
+        <button data-section="certifications">Certifications</button>
+        <button data-section="hobbies">Hobbies</button>
+      </div>
+
+      <!-- Actions: mobile menu button + theme toggle -->
+      <div class="nav-actions">
+        <button id="menu-btn" class="menu-btn" aria-expanded="false" aria-controls="mobile-menu">☰</button>
+        <button id="theme-toggle" aria-pressed="false">🌙</button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation (hidden by default) -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <button data-section="home">Home</button>
+      <button data-section="about">About</button>
+      <button data-section="skills">Skills</button>
+      <button data-section="projects">Projects</button>
+      <button data-section="experience">Experience</button>
+      <button data-section="education">Education</button>
+      <button data-section="certifications">Certifications</button>
+      <button data-section="hobbies">Hobbies</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="section hero">
+    <div class="container">
+      <div class="hero-inner" style="text-align:center">
+        <div class="profile-wrap" style="display:flex;justify-content:center;margin-bottom:1rem;">
+          <img src="profile.jpg" alt="Profile Picture" class="profile-pic" />
+        </div>
+        <h1>Khushwanth Gowda P</h1>
+        <p class="sub">
+          Bengaluru, India | 
+          <a href="mailto:khushwanthgowdap@gmail.com">khushwanthgowdap@gmail.com</a> | 8792322819
+        </p>
+        <p class="links">
+          <a href="https://www.linkedin.com/in/khushwanth-gowda-p-ab1a4a35a" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+          <a href="https://github.com/KhuGowP" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </p>
+        <p style="margin-top:1rem;">
+          <button class="primary-btn" onclick="scrollToSection('projects')">View My Projects</button>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section" aria-labelledby="about-heading">
+    <div class="container">
+      <h2 id="about-heading">About Me</h2>
+      <p>
+        Aspiring Aerospace Engineering student with strong foundation in aerodynamics, aircraft structures, and
+        propulsion. Skilled in CAD/CAE tools including Autodesk Fusion 360, CATIA, Creo, and ANSYS, with
+        hands-on experience in prototyping and design analysis. Seeking to apply my skills and knowledge to
+        drive advancements in the aerospace industry. Eager to contribute to cutting-edge projects and
+        collaborate with like-minded professionals.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section" aria-labelledby="skills-heading">
+    <div class="container">
+      <h2 id="skills-heading">Technical Skills</h2>
+      <div class="max-w-2xl mx-auto">
+        <ul class="skill-list">
+          <li><b>Languages (Basic):</b> C#, Python, MATLAB</li>
+          <li><b>CAD & Product Design:</b> Autodesk Fusion 360, CATIA (3DEXPERIENCE), Creo Parametric (Part Design, Generative Design), AutoCAD</li>
+          <li><b>Simulation & Analysis:</b> ANSYS (Mechanical, Fluent, Thermal), 3DEXPERIENCE (SIMULIA)</li>
+          <li><b>Aerodynamic Tools & Platforms:</b> XFLR5 (Airfoil & Wing Analysis), CFD & FEA</li>
+          <li><b>Engineering Domains:</b> Aerodynamics, Aircraft Structures, Propulsion, Flight Mechanics</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section" aria-labelledby="projects-heading">
+    <div class="container">
+      <h2 id="projects-heading">Projects</h2>
+
+      <div class="grid">
+        <!-- Project 1 -->
+        <article class="card">
+          <div class="card-media">
+            <img src="./idcard.webp" alt="ID Card Generator screenshot" />
+          </div>
+          <div class="card-body">
+            <h3>
+              <a href="https://github.com/CHINNIRATHOD/id-card-generater" target="_blank" rel="noopener noreferrer">ID Card Generator (Jan 2024)</a>
+            </h3>
+            <p>Built a full-stack app to generate digital ID cards with photo upload using MongoDB, Node.js, and Multer.</p>
+            <a class="primary-btn full-width" href="https://github.com/CHINNIRATHOD/id-card-generater" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="card">
+          <div class="card-media">
+            <img src="./cricket_score.webp" alt="Cricket Score Prediction screenshot" />
+          </div>
+          <div class="card-body">
+            <h3>
+              <a href="https://github.com/CHINNIRATHOD/ipl-score-pridiction" target="_blank" rel="noopener noreferrer">Cricket Score Prediction (Jun 2024)</a>
+            </h3>
+            <p>Used regression techniques to forecast cricket scores based on match data.</p>
+            <a class="primary-btn full-width" href="https://github.com/CHINNIRATHOD/ipl-score-pridiction" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="card">
+          <div class="card-media">
+            <img src="./Stock-Market-Predictions.jpg" alt="Stock Price Prediction screenshot" />
+          </div>
+          <div class="card-body">
+            <h3>
+              <a href="https://github.com/CHINNIRATHOD/stock-price-predictor" target="_blank" rel="noopener noreferrer">Stock Price Prediction (May 2025)</a>
+            </h3>
+            <p>Developed an LSTM-based model using Python and Streamlit to predict stock closing prices.</p>
+            <a class="primary-btn full-width" href="https://github.com/CHINNIRATHOD/stock-price-predictor" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="card">
+          <div class="card-media">
+            <img src="./daterecurrencepicker-dialog-daily.png" alt="Recurring Date Picker screenshot" />
+          </div>
+          <div class="card-body">
+            <h3>
+              <a href="https://github.com/CHINNIRATHOD/recurring-date-picker" target="_blank" rel="noopener noreferrer">Recurring Date Picker (Jul 2025)</a>
+            </h3>
+            <p>Built a modular, production-ready recurring date picker component using React (Next.js), Tailwind CSS, and Zustand.</p>
+            <a class="primary-btn full-width" href="https://github.com/CHINNIRATHOD/recurring-date-picker" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="card">
+          <div class="card-media">
+            <img src="./login&signup.png" alt="Login & Signup screenshot" />
+          </div>
+          <div class="card-body">
+            <h3>
+              <a href="https://github.com/CHINNIRATHOD/login-register" target="_blank" rel="noopener noreferrer">Login & Signup System (Jul 2025)</a>
+            </h3>
+            <p>Developed a responsive login and registration system using PHP, MySQL, and Bootstrap.</p>
+            <a class="primary-btn full-width" href="https://github.com/CHINNIRATHOD/login-register" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section" aria-labelledby="experience-heading">
+    <div class="container">
+      <h2 id="experience-heading">Internship</h2>
+
+      <div class="card card-large">
+        <div class="card-body">
+          <h3>Web Development Intern – Main Flow Services and Technologies Pvt. Ltd. (July 2025 – August 2025)</h3>
+          <p>
+            Worked on building responsive and user-friendly web applications using HTML, CSS, JavaScript, and React.
+            Contributed to both frontend and backend development with Node.js and MongoDB.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section" aria-labelledby="education-heading">
+    <div class="container">
+      <h2 id="education-heading">Education</h2>
+
+      <ul class="edu-list">
+        <li class="card"><a href=""></a>Dayananda Sagar University – CGPA: 8.48 (2026)</li>
+        <li class="card"><a href="https://drive.google.com/file/d/1OwkHlRIirnRb7Qre4Nb69_Q8vin5Vh_X/view?usp=drive_link">12th Marks Sheet</a>Masters PU College – 84.84% (2022)</li>
+        <li class="card"><a href="https://drive.google.com/file/d/17fGP_--yNUwUnnORbDegVR6YRf5nR_jQ/view?usp=drive_link">10th Marks Sheet</a> Sri Channakeshawa Swamy High School – 90.56% (2020)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section" aria-labelledby="certifications-heading">
+    <div class="container">
+      <h2 id="certifications-heading">Certifications</h2>
+
+      <ul class="cert-list">
+        <li class="card"><a href="https://drive.google.com/file/d/1DKrlClGCd0qz3A8wkiczWfZg6zvVdd3f/view?usp=drive_link">Certificate</a>2025 Autodesk Fusion Insider Testing Event - IInd Place </li>
+        <li class="card"><a href="https://drive.google.com/file/d/1LeWNklEeikm2oZTqrRcr0ieX8rh9AJNg/view?usp=drive_link">Certificate</a>2023 Autodesk Fusion Designathon</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Hobbies Section -->
+  <section id="hobbies" class="section" aria-labelledby="hobbies-heading">
+    <div class="container">
+      <h2 id="hobbies-heading">Hobbies</h2>
+      <p>Playing video games, listening to music — known for a positive and optimistic personality.</p>
+    </div>
+  </section>
+
+  <!-- Footer (optional) -->
+  <footer class="section" aria-label="Footer">
+    <div class="container" style="text-align:center;">
+      <p>&copy; <span id="year"></span> Khushwanth Gowda P</p>
+    </div>
+  </footer>
+
+  <script>
+    // Set current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
