@@ -215,7 +215,7 @@ a:hover {
   flex-grow: 1;
 }
 .card-body h3 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.15rem;
 }
 .card-body p {
   margin-bottom: 0.75rem;
@@ -275,4 +275,17 @@ details summary::before {
 /* Rotate arrow when open */
 details[open] summary::before {
   transform: r
+}
+
+#projects-heading{
+  margin-bottom: 40px;
+}
+
+.sub-heading{
+  margin: 30px;
+  margin-top: 60px;
+}
+
+#simulation{
+  width: 50px;
 }
